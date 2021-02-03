@@ -1,3 +1,158 @@
 // Bootstrap
 @import "vendor/bootstrap/scss/bootstrap.scss";
+@import url(https://fonts.googleapis.com/css?family=Muli);
 
+.navbar {
+  margin-top: 2rem;
+  img {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+      brightness(104%) contrast(97%);
+  }
+  .nav-item {
+    margin: 0 1.5rem;
+  }
+  .navbar-right {
+    margin-left: auto;
+    i {
+      margin-right: 0.8em;
+    }
+    a {
+      font-size: 0.9rem;
+      padding: 0.6em 1.5em;
+    }
+  }
+}
+.welcome {
+  --font-family-sans-serif: "Muli", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-family: Muli, sans-serif;
+  text-align: center;
+  padding-top: 5em;
+  color: #344a7a;
+}
+.main-container {
+  --font-family-sans-serif: "Muli", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-family: Muli, sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #212529;
+  text-align: left;
+  font-size: 0.9375rem;
+  box-sizing: border-box;
+  background-image: linear-gradient(0deg, #f5f9ff, #fbf6f3, #fff);
+
+  .cta-tile {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 30vh;
+    .cta-content {
+      padding: 1em;
+      a {
+        text-decoration: underline;
+      }
+      p {
+        padding-top: 1em;
+        i {
+          padding: 0.7em 1em;
+          border-radius: 5px;
+          background-color: orange;
+          color: white;
+        }
+      }
+      .btn {
+        text-decoration: none;
+
+        font-size: 0.8em;
+        font-weight: 800;
+        padding: 1em;
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .desktop-device {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .touch-device {
+    display: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .cta-content {
+    text-align: center;
+    .desktop-device {
+      display: none;
+    }
+  }
+}
+
+#footer {
+  --font-family-sans-serif: "Muli", sans-serif;
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-family: Muli, sans-serif;
+  box-sizing: border-box;
+  display: block;
+  border-top: 2px solid #e9f0fc;
+  .main-footer {
+    padding: 4rem 0 5rem;
+    font-size: 0.8rem;
+    text-align: left;
+    h3 {
+      font-family: Abril Fatface, cursive;
+      font-size: 1.5rem;
+      color: #344a7a;
+      margin: 0 0 1.75rem;
+    }
+    .footer-nav {
+      padding: 0;
+      max-width: none;
+      width: 50%;
+      float: left;
+
+      li {
+        list-style: none;
+        margin: 0 0 0.3125rem;
+        a {
+          color: inherit;
+        }
+      }
+    }
+    .social-list {
+      line-height: 2;
+      padding: 0;
+      li {
+        list-style: none;
+        a {
+          color: inherit;
+          i {
+            color: #98c1fe;
+            font-size: 0.8125rem;
+            margin-right: 0.8125rem;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: #344a7a;
+    color: #fff;
+    padding: 2.75rem 0 2.2rem;
+    font-size: 0.75rem;
+    a {
+      color: #fff;
+    }
+    .logo {
+      filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
+        brightness(104%) contrast(97%);
+    }
+  }
+}
